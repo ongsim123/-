@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+    <title>WEB3 - JavaScript</title>
+    <meta charset="utf-8">
+    <script>
+        var A={
+            setcolor : function(color){
+            var alist=document.querySelectorAll('a');
+            var i=0
+            while(i<alist.length)
+            {
+                alist[i].style.color=color;
+                i=i+1;
+            }
+          }
+                
+        }
+        var Body={
+            setcolor : function(color){
+            document.querySelector('body').style.color = color;
+        },
+            setbackgroundcolor : function(color){
+            document.querySelector('body').style.backgroundColor = color;
+        }
+        }
+        function nightDayHandler(self){
+            var target = document.querySelector('body');
+        if(self.value === '라이트모드')
+        {
+            Body.setbackgroundcolor('white');
+            self.value='다크모드';
+            Body.setcolor('black');
+            A.setcolor('red');
+        }
+        else
+        {
+            Body.setbackgroundcolor('black');
+            self.value='라이트모드';
+            Body.setcolor('white');
+            A.setcolor('powderblue');
+        }
+    }
+    </script>
+</head>
+<body>
+<h1>JH Coding Practice Zone</h1>
+<input type="button" value="다크모드" onclick=" nightDayHandler(this)">
+<ol type="I">
+    <li><a href="1.HTML.Html">HTML</a></li>
+    <li><a href="2.CSS.Html">CSS</a></li>  
+    <li><a href="3.JavaScript.Html">JavaScript</a></li> 
+</ol>
+    <h2>JavaScript</h2>
+
+    <p><img src="me.jpeg" alt="Jeonghyeon" width="400"></p>
+    <p>JavaScript가 궁금하세요?</p>
+    <a href="https://ko.wikipedia.org/wiki/자바스크립트"
+    target="_blank" title="위키디피아 JavaScript">링크</a> 클릭<br>
+frjkgnrjenejkhnthnothoitrhmmbkfdmbldmbojnitrmnormnornmgknmglfkmnoimtrionmtroinmtornmfglnmfglknmfglknmfglknmkgflmnklfg
+</body>
+</html>

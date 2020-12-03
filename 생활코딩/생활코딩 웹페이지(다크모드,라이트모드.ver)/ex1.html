@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>EX.1</title>
+</head>
+<body>
+  <h1>object</h1>
+  <h2>create</h2>
+ <script>
+  var a={
+    "만날떄" : "안녕",
+    "보낼때" : "잘가"
+  };
+  document.write("만날때 : "+a.만날때+"<br>");
+  document.write("보낼때 : "+a.보낼때+"<br>");
+  a.중국말="니하오";
+  document.write("중국말 : "+a.중국말+"<br>");
+  a["프랑스어"]="봉주르";
+  document.write("프랑스어 : "+a["프랑스어"]+"<br>");
+</script>
+<h2>interate</h2>
+<script>
+  for(var key in a){
+    document.write(key+" : "+a[key]+"<br>");
+  }
+</script>
+<h2>property&method</h2>
+<script>
+  a.showAll=function(){
+    for(var key in this){
+    document.write(key+" : "+this[key]+"<br>"); 
+  }
+  }
+  a.showAll();
+</script>
+</body>
+</html>
